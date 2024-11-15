@@ -47,7 +47,7 @@ onMount(() => {
       replay={false} 
       />
     <h2 class="text-gradient text-5xl leading-relaxed font-bold">
-      I uild Web Experiences for Modern Brands
+      I Build Web Experiences for Modern Brands
     </h2>
     
     <Typewriter Class="text-center font-medium text-xl mt-7 mb-7 leading-relaxed"
