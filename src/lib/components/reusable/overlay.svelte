@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from 'svelte';
+
   let showFogOverlay = true;
 
   function checkScrollPosition() {
@@ -9,7 +11,15 @@
     }
   }
 
-  window.addEventListener('scroll', checkScrollPosition);
+  // Run only on the client
+  onMount(() => {
+    window.addEventListener('scroll', checkScrollPosition);
+
+    // Clean up the event listener when the component is destroyed
+    return () => {
+      window.removeEventListener('scroll', checkScrollPosition);
+    };
+  });
 </script>
 
 {#if showFogOverlay}

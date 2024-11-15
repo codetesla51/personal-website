@@ -25,6 +25,7 @@
       slidesPerView: 'auto',
       spaceBetween: 20,
       loop: true,
+      
       freeMode: true,
       autoplay: {
         delay: 0,
@@ -56,11 +57,13 @@
   
   <!-- Use the Typewriter component here -->
   <div>
-    <Typewriter Class="text-center font-medium text-xl mt-14 leading-relaxed"
-      text="I specialize in using modern, efficient tools to create impactful web solutions."
-      typingSpeed={100}
-      replay={false} 
-    />
+<Typewriter 
+  Class="text-center font-medium text-xl mt-14 leading-relaxed"
+  text="I stay up-to-date with the latest tools and technologies to build impactful web solutions."
+  typingSpeed={100}
+  replay={false} 
+/>
+
   </div>
 </section>
 
