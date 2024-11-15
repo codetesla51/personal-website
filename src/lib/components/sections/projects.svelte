@@ -141,23 +141,41 @@ const projects: Project[] = [
         image: 'https://via.placeholder.com/300x200?text=UD-Cipher+Image',
     },
 ];
-onMount(() => {
-    new Swiper(".mySwiper2", {
-        grabCursor: true,
-        effect: "creative",
-        creativeEffect: {
-            prev: {
-                shadow: true,
-                translate: ["-120%", 0, -500],
+
+    onMount(() => {
+        new Swiper('.mySwiper2', {
+            grabCursor: true,
+            effect: 'creative',
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ['-120%', 0, -500],
+                },
+                next: {
+                    shadow: true,
+                    translate: ['120%', 0, -500],
+                },
             },
-            next: {
-                shadow: true,
-                translate: ["120%", 0, -500],
+            slidesPerView: 'auto', 
+            loop: false, 
+            centeredSlides: true,
+            speed: 600, 
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 2,
+                },
             },
-        },
+        });
     });
-});
 </script>
+
+
 
 <section>
     <!-- Heading Component -->
@@ -253,13 +271,14 @@ onMount(() => {
 
     </div>
     <div class="flex flex-col justify-center items-center">
-  <Typewriter 
-    class="text-center font-medium text-xl mt-14 leading-relaxed"
-    text="I have more projects on my GitHub account. Check the button below."
-    typingSpeed={100}
-    replay={false} 
-  />
-  <button class="rounded-[30px] mt-10 w-[150px] h-[45px]">Let's Talk</button>
+<Typewriter 
+  Class="text-center font-medium text-xl mt-14 leading-relaxed"
+  text="I have more projects on my GitHub account. Feel free to check them out. 
+        Click the button below."
+  typingSpeed={100}
+  replay={false} 
+/>
+  <button class="rounded-[30px] mt-10 w-[150px] h-[45px]">GitHub</button>
 </div>
 
 </section>
