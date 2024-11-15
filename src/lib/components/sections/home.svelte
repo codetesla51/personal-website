@@ -43,7 +43,7 @@ onMount(() => {
   <header class="flex justify-center items-center flex-col text-center">
     <Typewriter Class="greet py-2 px-4 text-xl bgt font-bold"
       text ="Hello, I'm Uthman Dev"
-      typingSpeed={100}
+      typingSpeed={80}
       replay={false} 
       />
     <h2 class="text-gradient text-5xl leading-relaxed font-bold">
@@ -52,7 +52,8 @@ onMount(() => {
     
     <Typewriter Class="text-center font-medium text-xl mt-7 mb-7 leading-relaxed"
       text="I’m a seasoned web designer and developer focused on creating effective, tailored web solutions using modern technologies and frameworks."
-      
+      typingSpeed={80}
+      replay={false} 
     />
 
     <div class="flex items-center gap-4 mt-7">

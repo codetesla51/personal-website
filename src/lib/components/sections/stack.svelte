@@ -65,7 +65,7 @@
     <Typewriter
       Class="text-center font-medium text-xl mt-14 leading-relaxed"
       text="I stay up-to-date with the latest tools and technologies to build impactful web solutions."
-      typingSpeed={100}
+      typingSpeed={80}
       replay={false} 
     />
   </div>
