@@ -39,7 +39,7 @@ onMount(() => {
   ];
 </script>
 
-<section class="min-h-screen" id="main-section">
+<section class="head" id="main-section">
   <header class="flex justify-center items-center flex-col text-center">
     <Typewriter Class="greet py-2 px-4 text-xl bgt font-bold"
       text ="Hello, I'm Uthman Dev"

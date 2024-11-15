@@ -44,7 +44,7 @@
   });
 </script>
 
-<section>
+<section class="stack">
   <Heading heading="Tech Stack" subheading="Technologies and Tools I Specialize In" subicon="fas fa-tools" />
   <div class="stacks mt-10">
     <!-- Swiper for right scrolling -->
