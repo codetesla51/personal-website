@@ -1,33 +1,35 @@
 <script>
   import { onMount } from 'svelte';
-  import Typewriter from '$lib/components/reusable/typer.svelte';  // Ensure you're importing the Typewriter component
+  import Typewriter from '$lib/components/reusable/typer.svelte';  
   
   let vantaEffect;
 
-  onMount(() => {
-    if (typeof VANTA !== 'undefined' && VANTA.DOTS) {
-      vantaEffect = VANTA.DOTS({
-        el: "#main-section",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 20.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0xe91a1,
-        color2: 0x363636,
-        backgroundColor: 0x0,
-        size: 10.0,
-        spacing: 19.0,
-        showLines: false
-      });
-    }
+onMount(() => {
+  if (typeof VANTA !== 'undefined' && VANTA.DOTS) {
+    vantaEffect = VANTA.DOTS({
+      el: "#main-section",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 20.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0xe91a1,
+      color2: 0x363636,
+      backgroundColor: 0x0,
+      size: 10.0,
+      spacing: 19.0,
+      showLines: false
+    });
+  } else {
+    console.error('VANTA or VANTA.DOTS is not defined');
+  }
 
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  });
+  return () => {
+    if (vantaEffect) vantaEffect.destroy();
+  };
+});
 
   const socials = [
     { Socialicon: "fab fa-facebook" },

@@ -2,7 +2,6 @@
   import Heading from '$lib/components/reusable/heading.svelte';
   import Typewriter from '$lib/components/reusable/typer.svelte';
   
-  // Define the type for the tech stack array
   interface TechStack {
     name: string;
     icon: string;
@@ -29,7 +28,6 @@
   import { onMount } from 'svelte';
   
   onMount(() => {
-    // Ensure the swiper type is handled
     const swiperRight = new Swiper('.swiper-right', {
       slidesPerView: 'auto',
       spaceBetween: 20,
