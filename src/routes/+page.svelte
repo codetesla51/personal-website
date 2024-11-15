@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+import Home from '$lib/components/sections/home.svelte';
+import Stack from '$lib/components/sections/stack.svelte';
+import Project from '$lib/components/sections/projects.svelte';
+import Overlay from '$lib/components/reusable/overlay.svelte';  
+
+</script> 
+  <Home />
+  <Stack />
+<Project />
+<Overlay />
