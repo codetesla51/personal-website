@@ -187,7 +187,7 @@ const projects: Project[] = [
 <Typewriter 
   Class="text-center font-medium text-xl mt-14 leading-relaxed"
   text="I have worked on a lot of projects. Here are some that portray and solve real-world problems. Swipe left or right to navigate."
-  typingSpeed={80}
+  typingSpeed={50}
   replay={false} 
 />
     <div class="swiper-container mySwiper2">
@@ -274,7 +274,7 @@ const projects: Project[] = [
   Class="text-center font-medium text-xl mt-14 leading-relaxed"
   text="I have more projects on my GitHub account. Feel free to check them out. 
         Click the button below."
-  typingSpeed={80}
+  typingSpeed={50}
   replay={false} 
 />
   <button class="rounded-[30px] mt-10 w-[150px] h-[45px]">GitHub</button>

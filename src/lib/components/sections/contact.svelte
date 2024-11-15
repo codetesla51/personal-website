@@ -1,5 +1,7 @@
 <script>
     import Heading from '$lib/components/reusable/heading.svelte';
+  import Typewriter from '$lib/components/reusable/typer.svelte';
+
     const socialLinks = [
       { icon : 'fab fa-facebook' , username: 'uthmandev' , medialink: 'https://facebook.com'},
       { icon : 'fab fa-twitter' , username: 'uthmandev' , medialink: 'https://twitter.com'},
@@ -9,11 +11,19 @@
 </script>
 
 <section>
+
     <Heading 
         heading="Lets Connect" 
         subheading="Get In Touch With Me" 
         subicon="fas fa-link" 
     />
+            <Typewriter
+      Class="text-center mb-4 font-medium text-xl mt-14 leading-relaxed"
+      text="Lets Connect And build Get on touch Through My Social Hanldes"
+      typingSpeed={50}
+      replay={false} 
+    />
+
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-6 mb-6 justify-center items-center">
         {#each socialLinks as Links}
         <a href={Links.medialink} class="flex px-7 py-5 bg-bg justify-between items-center w-full rounded-[30px] mb-4">
