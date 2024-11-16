@@ -36,7 +36,7 @@
 
 {#if isLoading}
   <!-- Loader Component -->
-  <Loader duration={6000} on:load={handleLoad} />
+  <Loader duration={5000} on:load={handleLoad} />
 {/if}
 <Cusor />
 <header class="px-4 py-4 fixed w-full z-50">
