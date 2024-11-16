@@ -166,10 +166,10 @@ const projects: Project[] = [
                     slidesPerView: 1,
                 },
                 768: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                 },
                 1024: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                 },
             },
         });
@@ -194,9 +194,9 @@ const projects: Project[] = [
     <div class="swiper-container mySwiper2">
         <div class="swiper-wrapper " data-aos="fade-down">
             {#each projects as project}
-                <div class="swiper-slide">
+                <div class="swiper-slide flex justify-center items-center">
                     
-                    <div class="px-4 py-4 bg-bg rounded w-[500px] mt-24">
+                    <div class="px-4 py-4 bg-bg rounded xl:w-[600px] w-[560px] md:w-[550px]  mt-24">
                         <div>
                             <h2 class="text-gradient text-4xl md-3 mt-3
                             font-black" data-aos="fade-right">{project.title}</h2>

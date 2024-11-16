@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import Typewriter from '$lib/components/reusable/typer.svelte';  
       import Button from "$lib/components/reusable/button.svelte";
+        
   let vantaEffect;
 
 onMount(() => {
@@ -52,7 +53,7 @@ onMount(() => {
 
     <Typewriter  Class="text-center font-medium text-xl mt-6 mb-7 leading-relaxed"
       text="As a passionate web designer and developer with solid experience, I focus on creating tailored, user-centric web solutions using modern technologies."
-      typingSpeed={80}
+      typingSpeed={50}
       replay={false} 
     />
 
