@@ -46,16 +46,17 @@ section {
         #8a8785 56%,
         #5a5553 79%
     );
-    background-size: 200%; /* Make the background twice as wide for animation */
+    background-size: 200%; 
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 3s linear infinite; /* Shining animation */
+    animation: shine 3s linear infinite;
 }
 
 @keyframes shine {
     0% {
-        background-position: 200% 0; /* Start with the gradient out of view on the right */
+        background-position: 200% 0; 
+
     }
     100% {
         background-position: -200% 0; /* Move the gradient to the left */
@@ -122,9 +123,9 @@ button {
     height: 10px;
 }
 
-/* Track of the scrollbar */
+
 ::-webkit-scrollbar-track {
-    background: var(--bg); /* Background color of the scrollbar track */
+    background: var(--bg); 
     border-radius: 5px;
 }
 
