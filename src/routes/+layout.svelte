@@ -11,8 +11,8 @@
   let isLoading = true;
 
   const navlinks = [
-    { name: "home", sectionid: "home" },
     { name: "about", sectionid: "about" },
+    { name: "projects", sectionid: "projects" },
     { name: "contact", sectionid: "contact" },
   ];
 

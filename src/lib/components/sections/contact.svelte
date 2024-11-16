@@ -41,7 +41,7 @@
   };
 </script>
 
-<section>
+<section id="contact">
   <Heading 
     heading="Let's Connect" 
     subheading="Get in Touch with Me" 
@@ -100,7 +100,7 @@
   {#if formState}
     <div class="navigation fixed inset-0 flex justify-center items-center z-50 bg-black bg-opacity-75">
       <div class="nav-body w-[450px] sm:w-[400px] md:w-[500px] xl:w-[550px] rounded bg-white p-6">
-        <div class="nav-head px-4 py-4 flex justify-between items-center border-b-2 border-br">
+        <div class="nav-head px-4 py-4 flex justify-between items-center">
           <div class="flex items-center justify-center gap-1">
             <h3 class="text-2xl mb-0.5 mr-2">Send Me an Email</h3>
           </div>
@@ -117,7 +117,9 @@
 
             <input name="to_name" type="hidden" value="Uthman" />
 
-            <input name="from_name" type="email" placeholder="Enter your email" class="bg-bg px-5 py-5 h-[60px] border-br border-2 p-5 rounded w-full mt-8" required />
+            <input name="from_name" type="email" placeholder="Enter your email"
+            class="emailinp bg-bg px-5 outline-0 py-5 h-[66px] border-br border-2 p-5 rounded
+            w-full mt-8" required />
             
             <Button text="Send" type="submit" Class="mt-4" />
           </form>
@@ -138,9 +140,10 @@
   {/if}
 </section>
 
+
 <style>
   .loader .spinner {
-    border-top-color: #00aaff;
+    border-top-color: #0071e2;
     border-radius: 50%;
     width: 50px;
     height: 50px;

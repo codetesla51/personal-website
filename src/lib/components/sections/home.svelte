@@ -8,7 +8,7 @@
   onMount(() => {
     if (typeof VANTA !== 'undefined' && VANTA.DOTS) {
       vantaEffect = VANTA.DOTS({
-        el: "#main-section",
+        el: "#about",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
@@ -40,7 +40,7 @@
   ];
 </script>
 
-<section class="head" id="main-section">
+<section class="head" id="about">
   <header class="flex justify-center items-center flex-col text-center">
     <Typewriter
       Class="greet py-2 px-4 text-xl bgt font-bold"

@@ -180,7 +180,7 @@ const projects: Project[] = [
 
 
 
-<section>
+<section id="projects">
     <!-- Heading Component -->
 <Heading 
     heading="Featured Projects" 
