@@ -4,10 +4,10 @@
   import Typewriter from '$lib/components/reusable/typer.svelte';
  
     const socialLinks = [
-      { icon : 'fab fa-facebook' , username: 'uthmandev' , medialink: 'https://facebook.com'},
-      { icon : 'fab fa-twitter' , username: 'uthmandev' , medialink: 'https://twitter.com'},
-      { icon : 'fab fa-github' , username: 'codetesla51' , medialink: 'https://github.com'},
-      { icon : 'fab fa-linkedin' , username: 'usmanoladele' , medialink: 'https://linkedin.com'},
+      { icon : 'fab fa-facebook' , username: 'uthmandev' , medialink: 'https://www.facebook.com/profile.php?id=100089196350154'},
+      { icon : 'fab fa-twitter' , username: 'uthmandev' , medialink: 'https://x.com/oladele56481?t=vgW-0uHR_cMBKylZz55FcA&s=09'},
+      { icon : 'fab fa-github' , username: 'codetesla51' , medialink: 'https://github.com/codetesla51'},
+      { icon : 'fab fa-linkedin' , username: 'usmanoladele' , medialink: 'https://www.linkedin.com/in/oladele-usman-a61578298'},
     ];
 </script>
 
@@ -28,7 +28,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-6 mb-6 justify-center items-center">
         {#each socialLinks as Links}
-        <a href={Links.medialink} class="flex px-7 py-5 bg-bg justify-between items-center w-full rounded-[30px] mb-4">
+        <a href={Links.medialink} target="_blank" rel="noopener noreferrer" class="flex px-7 py-5 bg-bg justify-between items-center w-full rounded-[30px] mb-4">
             <div class="flex mr-5 items-center justify-center gap-3">
                 <i class={`bgt xl:text-3xl text-2xl ${Links.icon}`}></i>
                 <h3 class="text-xl xl:text-2xl text-gradient">@{Links.username}</h3>

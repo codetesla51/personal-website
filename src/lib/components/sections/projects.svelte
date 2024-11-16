@@ -36,9 +36,9 @@ const projects: Project[] = [
             { icon: 'bootstrap', name: 'Bootstrap' },
         ],
         links: {
-            github: 'https://github.com/vautx',
+            github: 'https://github.com/codetesla51/vaultx',
         },
-        image: 'https://via.placeholder.com/300x200?text=VaultX+Image',
+        image: 'https://raw.githubusercontent.com/codetesla51/web-site-files/main/images/IMG_20241116_132121.jpg',
     },
     {
         title: 'Lyric Lens',
@@ -51,9 +51,10 @@ const projects: Project[] = [
             { icon: 'php', name: 'PHP' },
         ],
         links: {
-            github: 'https://github.com/vautx',
+            github: 'https://github.com/codetesla51/lyriclens',
         },
-        image: 'https://via.placeholder.com/300x200?text=Lyric+Lens+Image',
+        image:
+        'https://raw.githubusercontent.com/codetesla51/web-site-files/main/images/IMG_20241116_132437.jpg',
     },
     {
         title: 'Repo Crawler',
@@ -66,10 +67,11 @@ const projects: Project[] = [
             { icon: 'php', name: 'PHP' },
         ],
         links: {
-            live: 'https://repocralw.vercel.app',
-            github: 'https://github.com/vautx',
+            live: 'https://repocrawler.vercel.app',
+            github: 'https://github.com/codetesla51/repo_crawler',
         },
-        image: 'https://via.placeholder.com/300x200?text=Repo+Crawler+Image',
+        image:
+        'https://raw.githubusercontent.com/codetesla51/web-site-files/main/images/IMG_20241116_132442.jpg',
     },
     {
         title: 'Phantom PHP',
@@ -82,9 +84,9 @@ const projects: Project[] = [
             { icon: 'php', name: 'PHP' },
         ],
         links: {
-            github: 'https://github.com/vautx',
+            github: 'https://github.com/codetesla51/phantom-php',
         },
-        image: 'https://via.placeholder.com/300x200?text=Phantom+PHP+Image',
+        image: 'https://raw.githubusercontent.com/codetesla51/web-site-files/main/images/IMG_20241116_132439.jpg',
     },
     {
         title: 'Web Scraper Script',
@@ -95,9 +97,9 @@ const projects: Project[] = [
             { icon: 'php', name: 'PHP' },
         ],
         links: {
-            github: 'https://github.com/vautx',
+            github: 'https://github.com/codetesla51/web_scrapper_script',
         },
-        image: 'https://via.placeholder.com/300x200?text=Web+Scraper+Image',
+        image: 'https://raw.githubusercontent.com/codetesla51/web-site-files/main/images/fc1943b8-2cde-409e-b3a9-b6f5b7129ecf.jpeg',
     },
     {
         title: 'Code Quiz',
@@ -110,9 +112,9 @@ const projects: Project[] = [
             { icon: 'php', name: 'PHP' },
         ],
         links: {
-            github: 'https://github.com/vautx',
+            github: 'https://github.com/codetesla51/code_quiz',
         },
-        image: 'https://via.placeholder.com/300x200?text=Code+Quiz+Image',
+        image: 'https://raw.githubusercontent.com/codetesla51/web-site-files/main/images/IMG_20241116_132434.jpg',
     },
     {
         title: 'Web-IP',
@@ -123,9 +125,9 @@ const projects: Project[] = [
             { icon: 'php', name: 'PHP' },
         ],
         links: {
-            github: 'https://github.com/vautx',
+            github: 'https://github.com/codetesla51/web-ip',
         },
-        image: 'https://via.placeholder.com/300x200?text=Web-IP+Image',
+        image: 'https://raw.githubusercontent.com/codetesla51/web-site-files/main/images/fc1943b8-2cde-409e-b3a9-b6f5b7129ecf.jpeg',
     },
     {
         title: 'UD-Cipher',
@@ -137,9 +139,9 @@ const projects: Project[] = [
             { icon: 'php', name: 'PHP' },
         ],
         links: {
-            github: 'https://github.com/vautx',
+            github: 'https://github.com/codetesla51/ud-cipher',
         },
-        image: 'https://via.placeholder.com/300x200?text=UD-Cipher+Image',
+        image: 'https://raw.githubusercontent.com/codetesla51/web-site-files/main/images/fc1943b8-2cde-409e-b3a9-b6f5b7129ecf.jpeg',
     },
 ];
 
@@ -202,7 +204,8 @@ const projects: Project[] = [
                             font-black" data-aos="fade-right">{project.title}</h2>
                             
                             {#if project.image}
-                                <img data-aos=fade-down class="tech-icon w-full h-auto mt-4 mb-4 rounded"
+                                <img data-aos=fade-down class="tech-icon
+                                h-[25rem] w-full  mt-4 mb-4 rounded"
                                     src={project.image}
                                     alt="Project Image" /> 
                             {:else}
@@ -250,7 +253,7 @@ const projects: Project[] = [
                         <!-- Buttons with Conditional Logic -->
                         <div class="flex gap-4 items-center mt-4 mb-4"
                         data-aos="fade-right">
-                            <button 
+                            <a href={project.links.live} target="_blank" rel="noopener noreferrer"><button 
                                 class="w-[130px] px-3 h-[35px] text-white
                                 disabled:opacity-40" 
                                 on:click={() => window.open(project.links.live, '_blank')}
@@ -258,7 +261,8 @@ const projects: Project[] = [
                             >
                                 {project.links.live ? 'Live Demo' : 'Not Available'}
                             </button>
-                            
+                            </a>
+                            <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                             <button 
                                 class="w-[130px] px-3 h-[35px] text-white
                                 disabled:opacity-40" 
@@ -267,6 +271,7 @@ const projects: Project[] = [
                             >
                                 {project.links.github ? 'GitHub Repo' : 'Not Available'}
                             </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -284,6 +289,7 @@ const projects: Project[] = [
 />
       <Button
       text="Github"
+      link="https://github.com/codetesla51"
       />
 
 </div>
