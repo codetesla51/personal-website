@@ -2,20 +2,43 @@
   import Heading from '$lib/components/reusable/heading.svelte';
   import Button from "$lib/components/reusable/button.svelte";    
   import Typewriter from '$lib/components/reusable/typer.svelte';
+  import emailjs from '@emailjs/browser';
 
   const socialLinks = [
     { icon: 'fab fa-facebook', username: 'uthmandev', medialink: 'https://www.facebook.com/profile.php?id=100089196350154' },
     { icon: 'fab fa-twitter', username: 'uthmandev', medialink: 'https://x.com/oladele56481?t=vgW-0uHR_cMBKylZz55FcA&s=09' },
     { icon: 'fab fa-github', username: 'codetesla51', medialink: 'https://github.com/codetesla51' },
     { icon: 'fab fa-linkedin', username: 'usmanoladele', medialink: 'https://www.linkedin.com/in/oladele-usman-a61578298' },
+
   ];
 
   let formState = false;
-  
-  function makeFormVisible() {
+  let isLoading = false;
+
+  function toggleFormVisibility() {
     formState = !formState;
   }
-  
+
+  emailjs.init('ZPSqEIGndLqo2otUd');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    isLoading = true; 
+    emailjs
+      .sendForm('service_f2q4uzk', 'template_704y6rc', e.target)
+      .then(
+        () => {
+          isLoading = false; 
+          alert('Message sent! I’ll reply as soon as I see it.');
+          formState = false; 
+        },
+        (error) => {
+          isLoading = false; 
+          alert('Oops! Something went wrong. Please check your email and try again.');
+          console.log('FAILED...', error.text);
+        }
+      );
+  };
 </script>
 
 <section>
@@ -69,43 +92,63 @@
     <div class="flex justify-center items-center">
       <Button
         text="Send Email"
-        onClick={makeFormVisible}
+        onClick={toggleFormVisibility}
       />
     </div>
   </div>
   
-  <!-- Email form visibility controlled by formState using {#if} block -->
   {#if formState}
     <div class="navigation fixed inset-0 flex justify-center items-center z-50 bg-black bg-opacity-75">
       <div class="nav-body w-[450px] sm:w-[400px] md:w-[500px] xl:w-[550px] rounded bg-white p-6">
-        <div class="nav-head px-4 py-4 flex justify-between items-center
-        border-b-2 border-br">
+        <div class="nav-head px-4 py-4 flex justify-between items-center border-b-2 border-br">
           <div class="flex items-center justify-center gap-1">
             <h3 class="text-2xl mb-0.5 mr-2">Send Me an Email</h3>
           </div>
-          <i class="fas fa-x cursor-pointer" on:click={makeFormVisible}></i>
+          <i class="fas fa-x cursor-pointer" on:click={toggleFormVisibility}></i>
         </div>
         
         <div class="nav-items flex flex-col justify-center items-center mt-5">
-          <form action="https://formspree.io/f/xeoqkypg" method="POST">
-        <input name="message" hidden="hidden" value="Hey Uthman, a user sent you
-        an email from your personal website. Do try to reach them back .">
+          <form on:submit={sendEmail} method="POST">
+            <input 
+              name="message" 
+              type="hidden" 
+              value="Hello Uthman, you have received a new message from a visitor on your personal website. They are reaching out to connect with you. Please feel free to get back to them at your earliest convenience. Have a great day!" 
+            />
 
-            <input name="email" type="text" placeholder="Enter your email" class="bg-bg px-5
-            py-5 h-[60px] border-br border-2 p-5 rounded w-full mt-8" />
-            <Button text="Send" Class="" />
+            <input name="to_name" type="hidden" value="Uthman" />
+
+            <input name="from_name" type="email" placeholder="Enter your email" class="bg-bg px-5 py-5 h-[60px] border-br border-2 p-5 rounded w-full mt-8" required />
+            
+            <Button text="Send" type="submit" Class="mt-4" />
           </form>
         </div>
         
         <div class="nav-footer flex-col flex justify-center items-center mb-4 mt-8">
-  <p class="text-base">Powered by Formspree</p>        </div>
+          <p class="text-base">Powered by EmailJS</p>
+        </div>
       </div>
+    </div>
+  {/if}
+
+  <!-- Loader Section -->
+  {#if isLoading}
+    <div class="loader fixed inset-0 flex justify-center items-center z-50 bg-black bg-opacity-50">
+      <div class="spinner border-8 border-t-8 border-transparent border-blue-500 rounded-full w-16 h-16 animate-spin"></div>
     </div>
   {/if}
 </section>
 
 <style>
-  .hidden {
-    display: none;
+  .loader .spinner {
+    border-top-color: #00aaff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 </style>

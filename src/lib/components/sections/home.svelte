@@ -68,6 +68,8 @@
       {/each}
     </div>
 
-    <Button text="Let's Talk" />
+    <Button text="Let's Talk"
+    link="https://wa.link/6jqex1"
+    />
   </header>
 </section>
