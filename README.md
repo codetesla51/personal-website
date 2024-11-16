@@ -1,38 +1,46 @@
-# sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+# Uthman Dev Website
 
-## Creating a project
+## Description
+Welcome to my personal portfolio website! I am Uthman Oladele, a full-stack developer specializing in Laravel and modern web technologies. This website showcases my skills, projects, and the services I offer, all while providing a sleek, user-friendly experience. Dive in to explore what I have to offer!
 
-If you're seeing this, you've probably already done this step. Congrats!
+Check it out: [dev-uthman.vercel.app](https://dev-uthman.vercel.app)
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Features
+- **SEO-Optimized**: Optimized meta tags and descriptions to enhance search engine ranking.
+- **Improved UI**: A modern, responsive, and visually appealing interface for a seamless user experience.
+- **Enhanced Backend**: Dynamic content rendering using efficient and secure API integrations.
 
-# create a new project in my-app
-npx sv create my-app
-```
+## Tech Stack
+The project is built using a variety of modern web technologies:
+- **Frontend**: [Svelte](https://svelte.dev/) - A modern JavaScript framework for building fast and reactive web applications.
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
+- **TypeScript**: [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that enhances code quality and developer productivity.
+- **JavaScript**: [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Core scripting language for interactive web functionality.
 
-## Developing
+## Design Elements
+- **Fonts**: Using [Kanit](https://fonts.google.com/specimen/Kanit) for a clean and professional typographic experience.
+- **Icons**: [FontAwesome](https://fontawesome.com/) icons are used for easy-to-understand visuals and enhanced UI elements.
+- **Animations & Backgrounds**: [Vanta.js](https://www.vantajs.com/) animations for captivating backgrounds that stand out.
+- **Image Sliders**: [Swiper.js](https://swiperjs.com/) for smooth and interactive image and content sliders.
+- **Forms**: [Email.js](https://www.emailjs.com/) integration for quick and easy form submissions without backend setup.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Preview
+Check out the live version here: [dev-uthman.vercel.app](https://dev-uthman.vercel.app)
 
-```bash
-npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Installation
 
-## Building
+Follow these instructions to run the project locally.
 
-To create a production version of your app:
+### Prerequisites
+Make sure you have the following installed:
+- **Node.js** (v16+ recommended) [Download Node.js](https://nodejs.org/)
+- **npm** or **yarn** package manager
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+### Setup
+1. **Clone the repository**:
+   
+   ```bash
+   git clone https://github.com/codetesla51/personal-website.git
+    ```
