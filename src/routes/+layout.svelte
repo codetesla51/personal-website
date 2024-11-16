@@ -21,6 +21,11 @@
   <slot />
 </main>
 
-<footer>
-  
+
+<footer class="bg-black text-gradient px-4 py-6 mb-4 ">
+    <div class="container mx-auto text-center">
+        <h3 class="text-2xl font-semibold mb-4">"Code is my canvas, each line a new creation."</h3>
+        <p class="text-sm mb-6 italic">- Uthman Oladele</p>
+        <p class="text-base">Crafted with passion. &copy; 2024 Uthman Oladele</p>
+    </div>
 </footer>

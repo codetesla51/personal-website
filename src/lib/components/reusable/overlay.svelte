@@ -4,18 +4,19 @@
   let showFogOverlay = true;
 
   function checkScrollPosition() {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    const scrollPosition = window.innerHeight + window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight;
+    
+    if (scrollPosition >= pageHeight - 1) {
       showFogOverlay = false;
     } else {
       showFogOverlay = true;
     }
   }
 
-  // Run only on the client
   onMount(() => {
     window.addEventListener('scroll', checkScrollPosition);
 
-    // Clean up the event listener when the component is destroyed
     return () => {
       window.removeEventListener('scroll', checkScrollPosition);
     };
@@ -35,5 +36,6 @@
     height: 35vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
     pointer-events: none;
+    transition: opacity 0.3s ease;
   }
 </style>

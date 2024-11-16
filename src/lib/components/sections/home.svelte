@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import Typewriter from '$lib/components/reusable/typer.svelte';  
-  
+      import Button from "$lib/components/reusable/button.svelte";
   let vantaEffect;
 
 onMount(() => {
@@ -38,20 +38,20 @@ onMount(() => {
     { Socialicon: "fab fa-linkedin" },
   ];
 </script>
-
 <section class="head" id="main-section">
   <header class="flex justify-center items-center flex-col text-center">
     <Typewriter Class="greet py-2 px-4 text-xl bgt font-bold"
-      text ="Hello, I'm Uthman Dev"
+      text="Hi, I'm Uthman Oladele"
       typingSpeed={80}
       replay={false} 
-      />
-    <h2 class="text-gradient text-5xl leading-relaxed font-bold">
-      I Build Web Experiences for Modern Brands
+    />
+
+    <h2 class="text-gradient text-5xl leading-relaxed font-bold mt-4 capitalize">
+      I design digital experiences that help modern brands connect with their audiences.
     </h2>
-    
-    <Typewriter Class="text-center font-medium text-xl mt-7 mb-7 leading-relaxed"
-      text="I’m a seasoned web designer and developer focused on creating effective, tailored web solutions using modern technologies and frameworks."
+
+    <Typewriter Class="text-center font-medium text-xl mt-6 mb-7 leading-relaxed"
+      text="As a passionate web designer and developer with solid experience, I focus on creating tailored, user-centric web solutions using modern technologies."
       typingSpeed={80}
       replay={false} 
     />
@@ -61,7 +61,9 @@ onMount(() => {
         <i class={`social-icon text-2xl ${Socialicon}`}></i>
       {/each}
     </div>
-    
-    <button class="rounded-[30px] mt-10 w-[150px] h-[45px]">Let's Talk</button>
+
+    <Button
+      text="Let's Talk"
+    />
   </header>
 </section>

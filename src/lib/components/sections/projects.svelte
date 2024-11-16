@@ -1,5 +1,6 @@
 <script lang="ts">
 import { onMount } from 'svelte';
+    import Button from "$lib/components/reusable/button.svelte";  
   import Typewriter from '$lib/components/reusable/typer.svelte';
     import Heading from '$lib/components/reusable/heading.svelte';
     interface TechStackItem {
@@ -179,11 +180,11 @@ const projects: Project[] = [
 
 <section>
     <!-- Heading Component -->
-    <Heading 
-        heading="Featured Projects" 
-        subheading="Highlighting My Recent Creations" 
-        subicon="fas fa-briefcase" 
-    />
+<Heading 
+    heading="Featured Projects" 
+    subheading="Showcasing My Latest Work and Innovations" 
+    subicon="fas fa-briefcase" 
+/>
 <Typewriter 
   Class="text-center font-medium text-xl mt-14 leading-relaxed"
   text="I have worked on a lot of projects. Here are some that portray and solve real-world problems. Swipe left or right to navigate."
@@ -272,12 +273,15 @@ const projects: Project[] = [
     <div class="flex flex-col justify-center items-center">
 <Typewriter 
   Class="text-center font-medium text-xl mt-14 leading-relaxed"
-  text="I have more projects on my GitHub account. Feel free to check them out. 
-        Click the button below."
+  text="Explore more of my work on GitHub. Dive into my projects and see how I bring ideas to life. 
+        Click the button below to check them out."
   typingSpeed={50}
   replay={false} 
 />
-  <button class="rounded-[30px] mt-10 w-[150px] h-[45px]">GitHub</button>
+      <Button
+      text="Github"
+      />
+
 </div>
 
 </section>

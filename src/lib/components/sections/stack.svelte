@@ -45,10 +45,14 @@
 </script>
 
 <section class="stack">
-  <Heading heading="Tech Stack" subheading="Technologies and Tools I Specialize In" subicon="fas fa-tools" />
+<Heading 
+    heading="My Tech Stack" 
+    subheading="Tools & Technologies I Use to Build Solutions" 
+    subicon="fas fa-tools" 
+/>
   <div class="stacks mt-10">
     <!-- Swiper for right scrolling -->
-    <div class="swiper-container swiper-right w-full px-4 py-4 flex justify-center items-center mt-10">
+    <div class="swiper-container swiper-right w-full px-4 py-4 flex opacity-70 justify-center items-center mt-10">
       <div class="swiper-wrapper flex justify-center gap-5">
         {#each techStackRight as stack}
           <div class="swiper-slide flex justify-start items-center gap-4 w-[230px] p-4 bg-bg rounded-[10px]">
@@ -63,11 +67,12 @@
   <!-- Use the Typewriter component here -->
   <div>
     <Typewriter
-      Class="text-center font-medium text-xl mt-14 leading-relaxed"
-      text="I stay up-to-date with the latest tools and technologies to build impactful web solutions."
-      typingSpeed={50}
-      replay={false} 
-    />
+  Class="text-center font-medium text-xl mt-14 leading-relaxed"
+  text="I continuously explore and master the latest tools and technologies to craft innovative web solutions that make a difference."
+  typingSpeed={50}
+  replay={false}
+/>
+
   </div>
 </section>
 
