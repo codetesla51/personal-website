@@ -39,30 +39,30 @@ onMount(() => {
   ];
 </script>
 <section class="head" id="main-section">
-  <header class="flex justify-center items-center flex-col text-center">
-    <Typewriter Class="greet py-2 px-4 text-xl bgt font-bold"
+  <header  class="flex justify-center items-center flex-col text-center">
+    <Typewriter  Class="greet py-2 px-4 text-xl bgt font-bold"
       text="Hi, I'm Uthman Oladele"
       typingSpeed={80}
       replay={false} 
     />
 
-    <h2 class="text-gradient text-5xl leading-relaxed font-bold mt-4 capitalize">
+    <h2 data-aos="fade-down" class="text-gradient text-5xl leading-relaxed font-bold mt-4 capitalize">
       I design digital experiences that help modern brands connect with their audiences.
     </h2>
 
-    <Typewriter Class="text-center font-medium text-xl mt-6 mb-7 leading-relaxed"
+    <Typewriter  Class="text-center font-medium text-xl mt-6 mb-7 leading-relaxed"
       text="As a passionate web designer and developer with solid experience, I focus on creating tailored, user-centric web solutions using modern technologies."
       typingSpeed={80}
       replay={false} 
     />
 
-    <div class="flex items-center gap-4 mt-7">
+    <div class="flex items-center gap-4 mt-7" data-aos="fade-right">
       {#each socials as { Socialicon }}
         <i class={`social-icon text-2xl ${Socialicon}`}></i>
       {/each}
     </div>
 
-    <Button
+    <Button 
       text="Let's Talk"
     />
   </header>

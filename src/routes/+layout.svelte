@@ -1,5 +1,17 @@
 <script>
+    import { onMount } from 'svelte';
   import logo from "../assets/images/svg.svg"
+  import AOS from 'aos';
+
+    import 'aos/dist/aos.css';
+
+    onMount(() => {
+        AOS.init({
+            duration: 1500, 
+            easing: 'ease-in-out', 
+            once: true 
+        });
+    });
   import "../app.css"
 </script>
 
@@ -22,7 +34,7 @@
 </main>
 
 
-<footer class="bg-black text-gradient px-4 py-6 mb-4 ">
+<footer data-aos="fade-down" class="bg-black text-gradient px-4 py-6 mb-4 ">
     <div class="container mx-auto text-center">
         <h3 class="text-2xl font-semibold mb-4">"Code is my canvas, each line a new creation."</h3>
         <p class="text-sm mb-6 italic">- Uthman Oladele</p>

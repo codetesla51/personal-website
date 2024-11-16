@@ -51,9 +51,8 @@
     subicon="fas fa-tools" 
 />
   <div class="stacks mt-10">
-    <!-- Swiper for right scrolling -->
     <div class="swiper-container swiper-right w-full px-4 py-4 flex opacity-70 justify-center items-center mt-10">
-      <div class="swiper-wrapper flex justify-center gap-5">
+      <div class="swiper-wrapper flex justify-center gap-5 " data-aos="fadr-down">
         {#each techStackRight as stack}
           <div class="swiper-slide flex justify-start items-center gap-4 w-[230px] p-4 bg-bg rounded-[10px]">
             <img class="tech-icon" src={`https://skillicons.dev/icons?i=${stack.icon}`} alt={stack.name} /> 
@@ -64,7 +63,6 @@
     </div>
   </div>
   
-  <!-- Use the Typewriter component here -->
   <div>
     <Typewriter
   Class="text-center font-medium text-xl mt-14 leading-relaxed"

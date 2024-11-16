@@ -192,26 +192,27 @@ const projects: Project[] = [
   replay={false} 
 />
     <div class="swiper-container mySwiper2">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper " data-aos="fade-down">
             {#each projects as project}
                 <div class="swiper-slide">
                     
                     <div class="px-4 py-4 bg-bg rounded w-[500px] mt-24">
                         <div>
-                            <h2 class="text-gradient text-4xl md-3 mt-3 font-black">{project.title}</h2>
+                            <h2 class="text-gradient text-4xl md-3 mt-3
+                            font-black" data-aos="fade-right">{project.title}</h2>
                             
                             {#if project.image}
-                                <img class="tech-icon w-full h-auto mt-4 mb-4 rounded"
+                                <img data-aos=fade-down class="tech-icon w-full h-auto mt-4 mb-4 rounded"
                                     src={project.image}
                                     alt="Project Image" /> 
                             {:else}
                                 <p class="text-red-500 mt-4 mb-4">Image not available</p>
                             {/if}
 
-                            <p class="mt-4 mb-4 leading-relaxed text-xl">{project.description}</p>
+                            <p data-aos="zoom-in" class="mt-4 mb-4 leading-relaxed text-xl">{project.description}</p>
                         </div>
                         <div class="line w-full h-[1px] bg-br opacity-40"></div>
-                        <div class="flex mt-4 mb-4">
+                        <div class="flex mt-4 mb-4" data-aos="fade-down">
                             <div class="flex items-center">
                                 <p class="text-xl">Tags:</p>
                                 <div class="flex justify-center gap-4 ml-4">
@@ -221,7 +222,8 @@ const projects: Project[] = [
                                 </div>
                             </div>
                         </div>
-                        <div class="flex justify-between items-center">
+                        <div class="flex justify-between items-center"
+                        data-aos="fade-up">
                             <div class="flex items-center gap-3">
                                 <p class="text-xl">Status:</p>
                                 <p class={project.status === 'Completed' ? 'text-green-400' : 'text-yellow-400'}>
@@ -229,7 +231,8 @@ const projects: Project[] = [
                                 </p>
                             </div>
                             <div>
-                                <div class="flex items-center gap-3 mb-3 mt-3">
+                                <div class="flex items-center gap-3 mb-3 mt-3"
+                                data-aos="fade-left">
                                     <p class="text-xl">Tech Stack:</p>
                                     <div class="flex justify-center gap-3">
                                         {#each project.techStack as stack}
@@ -245,7 +248,8 @@ const projects: Project[] = [
                         </div>
 
                         <!-- Buttons with Conditional Logic -->
-                        <div class="flex gap-4 items-center mt-4 mb-4">
+                        <div class="flex gap-4 items-center mt-4 mb-4"
+                        data-aos="fade-right">
                             <button 
                                 class="w-[130px] px-3 h-[35px] text-white
                                 disabled:opacity-40" 

@@ -4,7 +4,6 @@
   export let typingSpeed = 100; 
   export let replay = false;
   export let Class = "";
-
   let displayedText = "";
   let currentIndex = 0;
   let observer;
@@ -56,7 +55,7 @@
 </script>
 
 <div bind:this={sectionRef} class="relative">
-  <p class=" {Class}">
+  <p class=" {Class}" data-aos="fade-up">
     {displayedText}
   </p>
 </div>
