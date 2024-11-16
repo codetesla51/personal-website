@@ -149,6 +149,10 @@
     height: 50px;
     animation: spin 1s linear infinite;
   }
+.navigation,.nav-body{
+    transition: 0.3s all ease-in;
+
+}
 
   @keyframes spin {
     0% { transform: rotate(0deg); }

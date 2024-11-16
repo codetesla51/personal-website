@@ -117,3 +117,36 @@ button {
 .navigation {
     background: rgb(0, 0, 0, 0.5);
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+    background: var(--bg); /* Background color of the scrollbar track */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--mc);
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0071e2;
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--mc);
+}
+::selection {
+    background-color: var(--mc);
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: var(--mc);
+    color: #ffffff;
+}

@@ -3,6 +3,7 @@
   import logo from "../assets/images/svg.svg";
   import Loader from "$lib/components/reusable/prelaoder.svelte";
     import Button from "$lib/components/reusable/button.svelte";    
+    import Cusor from "$lib/components/reusable/cusor.svelte";    
   import AOS from 'aos';
   import 'aos/dist/aos.css';
   import "../app.css";
@@ -37,7 +38,7 @@
   <!-- Loader Component -->
   <Loader duration={3000} on:load={handleLoad} />
 {/if}
-
+<Cusor />
 <header class="px-4 py-4 fixed w-full z-50">
   <nav class="nav px-4 py-4 flex justify-between items-center">
     <div class="flex items-center justify-center gap-1">

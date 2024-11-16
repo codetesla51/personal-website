@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /private/
 Allow: /
-Sitemap: https://dev-uthman.vercel.app/sitemap.xml
+Sitemap: https://www.xml-sitemaps.com/download/dev-uthman.vercel.app-da3b5d32e/sitemap.xml?view=1
