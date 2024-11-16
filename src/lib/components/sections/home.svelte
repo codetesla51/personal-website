@@ -49,9 +49,9 @@
       replay={false}
     />
 
-    <h2 data-aos="fade-down" class="text-gradient text-5xl leading-relaxed font-bold mt-4 capitalize">
+    <h1 data-aos="fade-down" class="text-gradient text-5xl leading-relaxed font-bold mt-4 capitalize">
       I design digital experiences that help modern brands connect with their audiences.
-    </h2>
+    </h1>
 
     <Typewriter
       Class="text-center font-medium text-xl mt-6 mb-7 leading-relaxed"
