@@ -1,7 +1,6 @@
 <script>
   import { onMount } from 'svelte';
   import logo from "../assets/images/svg.svg";
-  import Loader from "$lib/components/reusable/prelaoder.svelte";
     import Button from "$lib/components/reusable/button.svelte";    
     import Cusor from "$lib/components/reusable/cusor.svelte";    
   import AOS from 'aos';
@@ -33,11 +32,6 @@
     });
   });
 </script>
-
-{#if isLoading}
-  <!-- Loader Component -->
-  <Loader duration={5000} on:load={handleLoad} />
-{/if}
 <Cusor />
 <header class="px-4 py-4 fixed w-full z-50">
   <nav class="nav px-4 py-4 flex justify-between items-center">

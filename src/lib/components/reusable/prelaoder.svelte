@@ -1,24 +1,19 @@
 <script>
-  import { createEventDispatcher } from 'svelte';
+  export let duration = 3000;
 
-  export let duration = 3000; 
+  import { createEventDispatcher } from 'svelte';
   const dispatch = createEventDispatcher();
 
-  let isLoading = true;
-
   setTimeout(() => {
-    isLoading = false; 
     dispatch('load'); 
   }, duration);
 </script>
 
-{#if isLoading}
-  <div id="loader-container">
-    <div class="loader"></div>
-    <h3 class="mb-10 mt-10 text-2xl text-gradientanimted ">Loading Page Please
-    Wait...</h3>
-  </div>
-{/if}
+<!-- Loader Markup -->
+<div id="loader-container">
+  <div class="loader"></div>
+  <h3 class="mb-10 mt-10 text-2xl text-gradientanimted ">Loading Page Please Wait...</h3>
+</div>
 
 <style>
   #loader-container {
