@@ -13,7 +13,7 @@
     cursor.classList.add("mag");
     setTimeout(() => {
       cursor.classList.remove("mag");
-    }, 500); // Remove the mag class after 500ms
+    }, 500); 
   };
 
   import { onMount } from "svelte";
@@ -72,6 +72,6 @@
   .cursor.mag {
     background: linear-gradient(60deg, #08f38c, #0071e2);
     opacity: 0.5;
-    animation: aniaim 0.3s forwards; /* Optional animation on click */
+    animation: aniaim 0.3s forwards;
   }
 </style>

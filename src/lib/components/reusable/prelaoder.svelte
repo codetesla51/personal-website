@@ -15,7 +15,7 @@
 {#if isLoading}
   <div id="loader-container">
     <div class="loader"></div>
-    <h3 class="mb-10 mt-10 text-2xl text-gradientanimted ">Loading Assets Please
+    <h3 class="mb-10 mt-10 text-2xl text-gradientanimted ">Loading Page Please
     Wait...</h3>
   </div>
 {/if}
