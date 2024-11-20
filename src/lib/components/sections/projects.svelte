@@ -105,7 +105,7 @@ const projects: Project[] = [
         title: 'Code Quiz',
         description: 'A GitHub repository containing a collection of Data Structures and Algorithms (DSA) problems solved with high-performance algorithms like binary search, two pointers, and sliding window. Aimed at enhancing problem-solving skills for developers.',
         solves: ['Algorithms', 'Problem Solving', 'Data Structures'],
-        status: 'Work In Progress',
+        status: 'Completed',
         techStack: [
             { icon: 'git', name: 'Git' },
             { icon: 'py', name: 'Python' },
