@@ -34,9 +34,9 @@
 
   const socials = [
     { Socialicon: "fab fa-facebook", link: "https://www.facebook.com/profile.php?id=100089196350154" },
-    { Socialicon: "fab fa-x-twitter", link: "https://x.com/oladele56481?t=vgW-0uHR_cMBKylZz55FcA&s=09" },
+    { Socialicon: "fab fa-x-twitter", link: "https://x.com/uthman_dev?t=0byug7sWjHZjQ5dZ6fQelQ&s=09" },
     { Socialicon: "fab fa-github", link: "https://github.com/codetesla51" },
-    { Socialicon: "fab fa-linkedin", link: "https://www.linkedin.com/in/oladele-usman-a61578298" }
+    { Socialicon: "fab fa-linkedin", link: "https://www.linkedin.com/in/oladele-uthman-a61578298" }
   ];
 </script>
 

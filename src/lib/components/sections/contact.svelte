@@ -6,9 +6,9 @@
 
   const socialLinks = [
     { icon: 'fab fa-facebook', username: 'uthmandev', medialink: 'https://www.facebook.com/profile.php?id=100089196350154' },
-    { icon: 'fab fa-twitter', username: 'uthmandev', medialink: 'https://x.com/oladele56481?t=vgW-0uHR_cMBKylZz55FcA&s=09' },
+    { icon: 'fab fa-twitter', username: 'uthmandev', medialink: 'https://x.com/uthman_dev?t=0byug7sWjHZjQ5dZ6fQelQ&s=09' },
     { icon: 'fab fa-github', username: 'codetesla51', medialink: 'https://github.com/codetesla51' },
-    { icon: 'fab fa-linkedin', username: 'usmanoladele', medialink: 'https://www.linkedin.com/in/oladele-usman-a61578298' },
+    { icon: 'fab fa-linkedin', username: 'usmanoladele', medialink: 'https://www.linkedin.com/in/oladele-uthman-a61578298' },
 
   ];
 
