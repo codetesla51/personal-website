@@ -66,7 +66,7 @@
   <div>
     <Typewriter
   Class="text-center font-medium text-xl mt-14 leading-relaxed"
-  text="I continuously explore and master the latest tools and technologies to craft innovative web solutions that make a difference."
+  text="I continuously explore and master the latest tools and technologies to craft innovative  solutions that make a difference."
   typingSpeed={50}
   replay={false}
 />
